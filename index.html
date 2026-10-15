@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vinicius Tsuda | Desenvolvedor JavaScript em busca de estágio</title>
+<meta name="description" content="Portfólio de Vinicius Hideki Tsuda: desenvolvimento web com JavaScript, Node.js e React, com fundamentos de AWS. Em busca de estágio.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Vinicius Tsuda | Desenvolvedor JavaScript">
+<meta property="og:description" content="Desenvolvimento web com JavaScript, Node.js e React. Veja meus projetos e baixe meu currículo.">
+<!-- TROQUE o endereço abaixo pelo do seu site e coloque a imagem preview.png (1200x630) na raiz -->
+<meta property="og:url" content="https://viniciustsuda.github.io/">
+<meta property="og:image" content="https://viniciustsuda.github.io/preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#3a55f0">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+(function(){try{var t=localStorage.getItem('theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme='light'}})();
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#topo">vinicius.tsuda</a>
+    <nav aria-label="Principal">
+      <a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#competencias">Competências</a><a href="#trajetoria">Trajetória</a><a href="#contato">Contato</a>
+      <button id="toggle" aria-label="Alternar entre modo claro e escuro" title="Alternar tema">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </nav>
+  </div>
+  <div id="progress"></div>
+</header>
+
+<main id="topo">
+<section class="hero">
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="status fade"><span class="dot"></span>Disponível para estágio, remoto, híbrido ou presencial</div>
+    <h1><span><i>Vinicius</i></span><span><i>Tsuda</i></span></h1>
+    <div class="role fade">Desenvolvedor <b id="typed"></b><span class="caret"></span></div>
+    <p class="lead fade">Formado em Análise e Desenvolvimento de Sistemas e cursando Sistemas de Informação. Construo aplicações web com JavaScript, Node.js e React, e estudo AWS para entender onde elas rodam.</p>
+    <div class="btns fade">
+      <a class="btn primary" href="#projetos">Ver projetos</a>
+      <a class="btn" href="CV_ViniciusTsuda_Estagio.pdf" download>Baixar currículo (PDF)</a>
+    </div>
+  </div>
+  <div class="hint fade">Passe o cursor sobre a rede de nós</div>
+</section>
+
+<section id="sobre">
+  <div class="wrap about">
+    <div>
+      <h2>Sobre mim</h2>
+      <p>Estou começando minha trajetória profissional e busco um estágio para aprender na prática e crescer junto com um time.</p>
+      <p>Meu foco é desenvolvimento com JavaScript: front-end com React e back-end com Node.js, Express e MySQL. Em paralelo, faço laboratórios de AWS e me preparo para a certificação Cloud Practitioner. Meu TCC explorou blockchain, mas não é a área que busco.</p>
+      <p>Tenho conhecimento básico em Python, Java e C#, e inglês intermediário (B1) para leitura, escrita e conversação.</p>
+    </div>
+    <div class="facts">
+      <div class="photo"><img src="img/foto.jpg" alt="Foto de Vinicius Tsuda" onerror="this.remove()"><span>Espaço para sua foto<small>img/foto.jpg (proporção 4:5)</small></span></div>
+      <div class="fact"><strong>Sorocaba, SP</strong><span>Aberto a mudança de endereço na região</span></div>
+      <div class="fact"><strong>Tecnólogo em ADS</strong><span>IFSP Campinas, concluído em 2025</span></div>
+      <div class="fact"><strong>Bacharelado em SI</strong><span>UNICSUL (EAD), cursando até 2029</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="projetos">
+  <div class="wrap">
+    <h2>Projetos</h2>
+    <p class="lead">Os principais trabalhos que desenvolvi, com o problema que cada um resolve. Cada card leva ao repositório no GitHub.</p>
+    <div class="projects">
+      <a class="proj" href="https://github.com/ViniciusTsuda/live-lyric" target="_blank" rel="noopener">
+        <div class="media"><img src="img/livelyric.png" alt="Tela da extensão LiveLyric exibindo a letra de uma música" loading="lazy" onerror="this.remove()"><span class="ph">Espaço para imagem do projeto<small>img/livelyric.png</small></span></div>
+        <div class="body">
+          <span class="badge">Projeto pessoal | 2026</span>
+          <h3>LiveLyric</h3>
+          <div class="pts"><p><b>Problema:</b> descobrir a letra da música que está tocando obriga a trocar de aba, digitar o nome e escolher entre vários resultados.</p><p><b>Solução:</b> extensão para o Microsoft Edge que lê a faixa em reprodução pela Media Session API, busca a letra na Genius API e mostra capa, dados da faixa e link para a página original. Funciona com Spotify Web, YouTube Music, Deezer e outros players.</p><p><b>Destaque técnico:</b> separação entre a detecção de mídia nas abas (content script) e a busca de letras (service worker), com o token de acesso guardado apenas no navegador.</p></div>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">Extensão de navegador</span><span class="tag">Media Session API</span><span class="tag">Genius API</span><span class="tag">Web scraping</span></div>
+          <span class="view">Ver no GitHub <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+      <a class="proj" href="https://github.com/ViniciusTsuda/rede-social-node.js-react" target="_blank" rel="noopener">
+        <div class="media"><img src="img/rede-social.png" alt="Tela do feed da rede social com posts, curtidas e comentários" loading="lazy" onerror="this.remove()"><span class="ph">Espaço para imagem do projeto<small>img/rede-social.png</small></span></div>
+        <div class="body">
+          <span class="badge">Projeto de estudo | Full stack</span>
+          <h3>Rede social</h3>
+          <div class="pts"><p><b>Problema:</b> entender, na prática, como front-end e back-end conversam em uma aplicação completa.</p><p><b>Solução:</b> rede social com cadastro e login de usuários, criação de posts, curtidas e comentários. API em Express com banco MySQL e interface em React.</p><p><b>Destaque técnico:</b> modelagem relacional dos dados (usuários, posts, curtidas, comentários) e integração do React com uma API REST.</p></div>
+          <div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MySQL</span><span class="tag">API REST</span></div>
+          <span class="view">Ver no GitHub <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+      <a class="proj minor" href="https://github.com/ViniciusTsuda/evoting_ifsp" target="_blank" rel="noopener">
+        <div class="media"><img src="img/evoting.png" alt="Tela do sistema eVoting com painel administrativo e resultados" loading="lazy" onerror="this.remove()"><span class="ph">Espaço para imagem do projeto<small>img/evoting.png</small></span></div>
+        <div class="body">
+          <span class="badge">Trabalho de conclusão de curso | IFSP</span>
+          <h3>eVoting: votação eletrônica</h3>
+          <div class="pts"><p><b>Problema:</b> uma votação eletrônica precisa ser auditável, mas sem revelar em quem cada pessoa votou.</p><p><b>Solução:</b> sistema em que os votos são registrados em um contrato Solidity (Ethereum), com login por CPF, assinatura pelo MetaMask, hash único por eleitor e bloqueio de voto duplicado. Backend em Node.js e MySQL, com painel administrativo e resultados em tempo real.</p><p><b>Destaque técnico:</b> equilibrar transparência e anonimato dos votos, respeitando a LGPD.</p></div>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">MySQL</span><span class="tag">Solidity</span><span class="tag">MetaMask</span></div>
+          <span class="view">Ver no GitHub <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+    </div>
+    <div class="more">
+      <h3>Outros repositórios</h3>
+      <div class="chips">
+        <a class="chip" href="https://github.com/ViniciusTsuda/JavaScript_Study" target="_blank" rel="noopener">JavaScript_Study<small>Estudos de JavaScript</small></a>
+        <a class="chip" href="https://github.com/ViniciusTsuda/faculdade-sistemas-da-informacao" target="_blank" rel="noopener">faculdade-sistemas-da-informacao<small>Atividades do bacharelado</small></a>
+        <a class="chip" href="https://github.com/ViniciusTsuda?tab=repositories" target="_blank" rel="noopener">Ver todos no GitHub<small>github.com/ViniciusTsuda</small></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="competencias">
+  <div class="wrap">
+    <h2>Competências</h2>
+    <div class="skills">
+      <div class="group"><h3>Front-end</h3><div class="chips"><span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">React.js</span><span class="tag">Hooks</span></div></div>
+      <div class="group"><h3>Back-end e dados</h3><div class="chips"><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">APIs RESTful</span><span class="tag">Arquitetura MVC</span><span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">Modelagem relacional</span></div></div>
+      <div class="group"><h3>Nuvem</h3><div class="chips"><span class="tag">AWS EC2</span><span class="tag">S3</span><span class="tag">RDS</span><span class="tag">IAM</span><span class="tag">VPC</span><span class="tag">CloudFront</span><span class="tag">CloudWatch</span></div></div>
+      <div class="group"><h3>Ferramentas</h3><div class="chips"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Postman</span><span class="tag">Scrum</span><span class="tag">Excel</span><span class="tag">Word</span></div></div>
+    </div>
+    <p class="soft">Também trabalho bem com aprendizado contínuo, resolução de problemas, trabalho em equipe, proatividade, adaptação e comunicação.</p>
+  </div>
+</section>
+
+<section id="trajetoria">
+  <div class="wrap">
+    <h2>Trajetória</h2>
+    <div class="tl" id="tl">
+      <div class="ev"><time>07/2026 até hoje</time><h3>Laboratórios práticos AWS | Escola da Nuvem</h3><p>Laboratórios do programa AWS re/Start com EC2, S3, IAM, redes, segurança e gerenciamento de recursos, em preparação para a certificação <em>AWS Certified Cloud Practitioner</em>.</p></div>
+      <div class="ev"><time>06/2026 até hoje</time><h3>Desenvolvimento Web Moderno com JavaScript | Udemy</h3><p>Curso para aprofundar JavaScript moderno e práticas de desenvolvimento web.</p></div>
+      <div class="ev"><time>03/2026 até 12/2029</time><h3>Bacharelado em Sistemas de Informação | UNICSUL (EAD)</h3><p>Graduação em andamento.</p></div>
+      <div class="ev"><time>03/2023 até 12/2025</time><h3>Tecnólogo em Análise e Desenvolvimento de Sistemas | IFSP Campinas</h3><p>Curso concluído com o TCC de votação eletrônica em blockchain.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="contact">
+  <div class="wrap">
+    <h2>Vamos conversar?</h2>
+    <p class="lead">Estou em busca de uma oportunidade de estágio. Fale comigo por onde for mais fácil.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:viniciustsuda9@gmail.com">viniciustsuda9@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/vinicius-hideki-tsuda" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/ViniciusTsuda" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="tel:+5518996301181" id="phone">(18) 99630-1181</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer>© <span id="y"></span> Vinicius Hideki Tsuda. Feito com HTML, CSS e JavaScript.</footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const $=s=>document.querySelector(s), root=document.documentElement;
+$('#y').textContent=new Date().getFullYear();
+
+/* tema */
+$('#toggle').addEventListener('click',e=>{
+  const t=root.dataset.theme==='dark'?'light':'dark';
+  root.dataset.theme=t;try{localStorage.setItem('theme',t)}catch(_){}
+  e.currentTarget.classList.add('spin');setTimeout(()=>e.currentTarget.classList.remove('spin'),500);
+  say(t==='dark'?'Modo escuro ativado':'Modo claro ativado');
+});
+function say(m){const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(say.t);say.t=setTimeout(()=>t.classList.remove('show'),1600)}
+
+/* texto digitado */
+const words=['JavaScript','Node.js','React','web em formação'];
+let w=0,c=0,del=false;const el=$('#typed');
+const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function type(){
+  const cur=words[w];
+  if(still){el.textContent=words[0];return}
+  el.textContent=cur.slice(0,c+=del?-1:1);
+  let d=del?35:80;
+  if(!del&&c===cur.length){del=true;d=1600}
+  else if(del&&c===0){del=false;w=(w+1)%words.length;d=300}
+  setTimeout(type,d);
+}
+type();
+
+/* rede de nós interativa */
+const cv=$('#net'),ctx=cv.getContext('2d');let W,H,pts=[],mouse={x:-999,y:-999};
+function size(){const r=cv.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+  const n=Math.min(90,Math.floor(W*H/14000));pts=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35}))}
+addEventListener('resize',size);size();
+cv.parentElement.addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect();mouse.x=e.clientX-r.left;mouse.y=e.clientY-r.top});
+cv.parentElement.addEventListener('pointerleave',()=>mouse.x=-999);
+function frame(){
+  const rgb=getComputedStyle(root).getPropertyValue('--node').trim();
+  ctx.clearRect(0,0,W,H);
+  for(const p of pts){
+    const dx=p.x-mouse.x,dy=p.y-mouse.y,d=Math.hypot(dx,dy);
+    if(d<140){p.x+=dx/d*1.6;p.y+=dy/d*1.6}
+    p.x+=p.vx;p.y+=p.vy;
+    if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;
+  }
+  for(let i=0;i<pts.length;i++){
+    const a=pts[i];
+    for(let j=i+1;j<pts.length;j++){
+      const b=pts[j],d=Math.hypot(a.x-b.x,a.y-b.y);
+      if(d<130){ctx.strokeStyle=`rgba(${rgb},${(1-d/130)*.35})`;ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke()}
+    }
+    const m=Math.hypot(a.x-mouse.x,a.y-mouse.y);
+    if(m<180){ctx.strokeStyle=`rgba(${rgb},${(1-m/180)*.6})`;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(mouse.x,mouse.y);ctx.stroke()}
+    ctx.fillStyle=`rgba(${rgb},.75)`;ctx.beginPath();ctx.arc(a.x,a.y,2.2,0,7);ctx.fill();
+  }
+  if(!still&&vis)requestAnimationFrame(frame);else running=false;
+}
+let vis=true,running=true;
+new IntersectionObserver(([e])=>{vis=e.isIntersecting;if(vis&&!running&&!still){running=true;requestAnimationFrame(frame)}}).observe(cv);
+still?frame():requestAnimationFrame(frame);
+
+/* progresso, linha do tempo e brilho dos cards */
+const tl=$('#tl');
+function scroll(){
+  const h=root.scrollHeight-innerHeight;$('#progress').style.width=(scrollY/h*100)+'%';
+  const r=tl.getBoundingClientRect(),f=(innerHeight*.6-r.top)/r.height;
+  tl.style.setProperty('--fill',Math.max(0,Math.min(1,f))*100+'%');
+}
+addEventListener('scroll',scroll,{passive:true});scroll();
+document.querySelectorAll('.proj').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',e.clientX-r.left+'px');c.style.setProperty('--my',e.clientY-r.top+'px')}));
+</script>
+</body>
+</html>
